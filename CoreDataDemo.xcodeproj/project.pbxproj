@@ -15,6 +15,13 @@
 		FC6B0EF4247532AB00ED6ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6B0EF3247532AB00ED6ED5 /* Assets.xcassets */; };
 		FC6B0EF7247532AB00ED6ED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6B0EF5247532AB00ED6ED5 /* LaunchScreen.storyboard */; };
 		FC6B0F02247532AB00ED6ED5 /* CoreDataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0F01247532AB00ED6ED5 /* CoreDataDemoTests.swift */; };
+		FC6B0F0E2475B1EE00ED6ED5 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0F0C2475B1EE00ED6ED5 /* Student+CoreDataClass.swift */; };
+		FC6B0F0F2475B1EE00ED6ED5 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0F0D2475B1EE00ED6ED5 /* Student+CoreDataProperties.swift */; };
+		FC6B0F132475B6DE00ED6ED5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6B0F122475B6DE00ED6ED5 /* CoreData.framework */; };
+		FC6B0F152475BF8800ED6ED5 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0F142475BF8800ED6ED5 /* DatabaseHelper.swift */; };
+		FC6B0F172476966A00ED6ED5 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0F162476966A00ED6ED5 /* StudentTableViewCell.swift */; };
+		FC6B0F1D247698A100ED6ED5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0F1C247698A100ED6ED5 /* ListViewController.swift */; };
+		FC6B0F2124769B1200ED6ED5 /* StudentTableDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B0F2024769B1200ED6ED5 /* StudentTableDelegateAndDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,13 @@
 		FC6B0EFD247532AB00ED6ED5 /* CoreDataDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6B0F01247532AB00ED6ED5 /* CoreDataDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoTests.swift; sourceTree = "<group>"; };
 		FC6B0F03247532AB00ED6ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC6B0F0C2475B1EE00ED6ED5 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC6B0F0D2475B1EE00ED6ED5 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC6B0F122475B6DE00ED6ED5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FC6B0F142475BF8800ED6ED5 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		FC6B0F162476966A00ED6ED5 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		FC6B0F1C247698A100ED6ED5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		FC6B0F2024769B1200ED6ED5 /* StudentTableDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableDelegateAndDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6B0F132475B6DE00ED6ED5 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +81,7 @@
 				FC6B0EE62475329C00ED6ED5 /* CoreDataDemo */,
 				FC6B0F00247532AB00ED6ED5 /* CoreDataDemoTests */,
 				FC6B0EE52475329C00ED6ED5 /* Products */,
+				FC6B0F112475B6DE00ED6ED5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,12 +97,13 @@
 		FC6B0EE62475329C00ED6ED5 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FC6B0F1B247697FB00ED6ED5 /* Controller */,
+				FC6B0F1A247697B200ED6ED5 /* viewModel */,
+				FC6B0F19247697A700ED6ED5 /* View */,
+				FC6B0F102475B22E00ED6ED5 /* core data Model */,
 				FC6B0EE72475329C00ED6ED5 /* AppDelegate.swift */,
 				FC6B0EE92475329C00ED6ED5 /* SceneDelegate.swift */,
-				FC6B0EEB2475329C00ED6ED5 /* ViewController.swift */,
-				FC6B0EED2475329C00ED6ED5 /* Main.storyboard */,
 				FC6B0EF3247532AB00ED6ED5 /* Assets.xcassets */,
-				FC6B0EF5247532AB00ED6ED5 /* LaunchScreen.storyboard */,
 				FC6B0EF8247532AB00ED6ED5 /* Info.plist */,
 				FC6B0EF02475329C00ED6ED5 /* CoreDataDemo.xcdatamodeld */,
 			);
@@ -100,6 +117,67 @@
 				FC6B0F03247532AB00ED6ED5 /* Info.plist */,
 			);
 			path = CoreDataDemoTests;
+			sourceTree = "<group>";
+		};
+		FC6B0F102475B22E00ED6ED5 /* core data Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B0F0C2475B1EE00ED6ED5 /* Student+CoreDataClass.swift */,
+				FC6B0F0D2475B1EE00ED6ED5 /* Student+CoreDataProperties.swift */,
+			);
+			path = "core data Model";
+			sourceTree = "<group>";
+		};
+		FC6B0F112475B6DE00ED6ED5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B0F122475B6DE00ED6ED5 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC6B0F19247697A700ED6ED5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B0EED2475329C00ED6ED5 /* Main.storyboard */,
+				FC6B0EF5247532AB00ED6ED5 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC6B0F1A247697B200ED6ED5 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B0F142475BF8800ED6ED5 /* DatabaseHelper.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		FC6B0F1B247697FB00ED6ED5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B0F1F2476990E00ED6ED5 /* Student Detail */,
+				FC6B0F1E247698DF00ED6ED5 /* Student List */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC6B0F1E247698DF00ED6ED5 /* Student List */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B0F1C247698A100ED6ED5 /* ListViewController.swift */,
+				FC6B0F162476966A00ED6ED5 /* StudentTableViewCell.swift */,
+				FC6B0F2024769B1200ED6ED5 /* StudentTableDelegateAndDataSource.swift */,
+			);
+			path = "Student List";
+			sourceTree = "<group>";
+		};
+		FC6B0F1F2476990E00ED6ED5 /* Student Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B0EEB2475329C00ED6ED5 /* ViewController.swift */,
+			);
+			path = "Student Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +281,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6B0F0F2475B1EE00ED6ED5 /* Student+CoreDataProperties.swift in Sources */,
 				FC6B0EEC2475329C00ED6ED5 /* ViewController.swift in Sources */,
 				FC6B0EF22475329C00ED6ED5 /* CoreDataDemo.xcdatamodeld in Sources */,
+				FC6B0F152475BF8800ED6ED5 /* DatabaseHelper.swift in Sources */,
 				FC6B0EE82475329C00ED6ED5 /* AppDelegate.swift in Sources */,
+				FC6B0F1D247698A100ED6ED5 /* ListViewController.swift in Sources */,
+				FC6B0F2124769B1200ED6ED5 /* StudentTableDelegateAndDataSource.swift in Sources */,
 				FC6B0EEA2475329C00ED6ED5 /* SceneDelegate.swift in Sources */,
+				FC6B0F0E2475B1EE00ED6ED5 /* Student+CoreDataClass.swift in Sources */,
+				FC6B0F172476966A00ED6ED5 /* StudentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
